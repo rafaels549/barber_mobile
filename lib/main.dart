@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'barberShop.dart';
-import 'components/pages/base_page.dart'; // Importando BasePage
+import 'components/pages/base_page.dart';
+import 'components/pages/login_screen.dart';
+import 'components/pages/register_screen.dart'; // Importando BasePage
 
 void main() {
   runApp(const MyApp());
@@ -9,14 +11,14 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  @override
+   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Barbearia App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const LoginScreen(), 
     );
   }
 }
